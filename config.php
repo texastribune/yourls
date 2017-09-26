@@ -48,7 +48,7 @@ define('YOURLS_DEBUG', getenv('YOURLS_DEBUG') === 'true');
  * Stick to one setting. It's best not to change after you've started creating
  * links.
  */
-define('YOURLS_URL_CONVERT', getenv('YOURLS_URL_CONVERT') ?: 32);
+define('YOURLS_URL_CONVERT', getenv('YOURLS_URL_CONVERT') ?: 62);
 
 /** Usernames and passwords of users allowed to access the admin site. */
 define('YOURLS_PRIVATE', true);
