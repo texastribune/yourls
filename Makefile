@@ -1,6 +1,6 @@
 .PHONY: build push
 
-PREFIX ?= pavlov/yourls
+PREFIX ?= texastribune/yourls
 TAG ?= latest
 
 build:
