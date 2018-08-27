@@ -12,3 +12,7 @@ RUN curl -o /tmp/YOURLS-$YOURLS_VERSION.tar.gz -L https://github.com/YOURLS/YOUR
 COPY htaccess .htaccess
 COPY index.php ./index.php
 COPY config.php ./user/config.php
+
+RUN curl -o /tmp/yourls-bulk-import-and-shorten.tar.gz -L https://github.com/vaughany/yourls-bulk-import-and-shorten/archive/master.tar.gz && tar -zxf /tmp/yourls-bulk-import-and-shorten.tar.gz --directory user/plugins && rm /tmp/yourls-bulk-import-and-shorten.tar.gz
+
+RUN curl -o /tmp/YOURLS-Import-Export.tar.gz -L https://github.com/GautamGupta/YOURLS-Import-Export/archive/master.tar.gz && tar -zxf /tmp/YOURLS-Import-Export.tar.gz --directory user/plugins && rm /tmp/YOURLS-Import-Export.tar.gz
