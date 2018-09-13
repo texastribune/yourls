@@ -37,7 +37,7 @@ with open("input.csv") as csvfile:
             continue
         shorturl = response["shorturl"]
         all.append({"email": title, "long url": url, "short url": shorturl})
-
+        print(shorturl)
 
 with open("output.csv", mode="w") as outfile:
     fieldnames = ["email", "long url", "short url"]
