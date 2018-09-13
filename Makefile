@@ -3,7 +3,10 @@ TAG ?= latest
 
 run: build db
 	-docker rm -f yourls
-	docker run --name yourls --publish=80:80 --net=yourls-net --env-file=env -it texastribune/yourls
+	docker run --name yourls --publish=80:80 --net=yourls-net --env-file=env -it --rm texastribune/yourls
+
+interactive:
+	docker run --name yourls --publish=80:80 --net=yourls-net --env-file=env -it --rm texastribune/yourls bash
 
 build:
 	docker build -t $(PREFIX):$(TAG) .
