@@ -7,7 +7,7 @@ RUN curl -o /tmp/YOURLS-$YOURLS_VERSION.tar.gz -L https://github.com/YOURLS/YOUR
     rm /tmp/YOURLS-$YOURLS_VERSION.tar.gz && \
     docker-php-ext-install pdo_mysql && \
     a2enmod rewrite && \
-    rm *.html *.md *.txt
+    rm -f *.html *.md *.txt
 
 COPY htaccess .htaccess
 COPY index.php ./index.php
