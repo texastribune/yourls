@@ -28,7 +28,7 @@ define('YOURLS_HOURS_OFFSET', getenv('YOURLS_HOURS_OFFSET') ?: 0);
 define('YOURLS_LANG', getenv('YOURLS_LANG'));
 
 /** require unique shotlinks. */
-define('YOURLS_UNIQUE_URLS', true);
+define('YOURLS_UNIQUE_URLS', false);
 
 /**
  * A random secret hash used to encrypt cookies. You don't have to remember
