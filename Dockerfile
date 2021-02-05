@@ -1,4 +1,4 @@
-FROM php:7.4.11-apache
+FROM php:8.0.2-apache
 MAINTAINER tech@texastribune.org
 
 ENV YOURLS_VERSION 1.7.9
