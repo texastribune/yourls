@@ -1,7 +1,7 @@
 FROM php:7.4.11-apache
 MAINTAINER tech@texastribune.org
 
-ENV YOURLS_VERSION 1.7.9
+ENV YOURLS_VERSION 1.8.1
 RUN curl -o /tmp/YOURLS-$YOURLS_VERSION.tar.gz -L https://github.com/YOURLS/YOURLS/archive/$YOURLS_VERSION.tar.gz && \
     tar -zxf /tmp/YOURLS-$YOURLS_VERSION.tar.gz --strip-components=1 && \
     rm /tmp/YOURLS-$YOURLS_VERSION.tar.gz && \
