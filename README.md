@@ -1,3 +1,5 @@
+> _🕸 Archive note: This app is no longer hosted nor maintained. See corresponding Decision Doc in wiki_
+
 # yourls
 
 Simple Docker container for [YOURLS](https://yourls.org/).
